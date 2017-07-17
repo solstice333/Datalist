@@ -1,12 +1,35 @@
-input {
+.search {
     display: block;
-    width: 200px;
     position: relative;
     left: 100px;
+    height: 40px;
+}
+#bar {
+     float: left; 
+}
+#bar input {
+    width: 200px;
+}
+#dropdown {
+    float: left;
+}
+#dropdown input {
+    font-weight: bolder;
 }
 select {
     width: 200px;
     position: relative;
     left: 100px;
     z-index: 1;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    margin: 0.35em -0.2em;
+}
+.arrow-container {
+    float: left;
 }

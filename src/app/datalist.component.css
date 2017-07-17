@@ -33,3 +33,6 @@ select {
 .arrow-container {
     float: left;
 }
+.hide-dropdown {
+    display: none;
+}

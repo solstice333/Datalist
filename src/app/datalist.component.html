@@ -1,7 +1,9 @@
 <div id="myDatalist">
   <h1>myDatalist</h1>
-  <input #inputElem>
-  <select size={{max}} (change)="combo($event, inputElem)">
-    <option *ngFor="let opt of opts">{{opt}}</option>
-  </select>
+  <input #inputElem (keyup)="filterOpts(inputElem.value)">
+  <div *ngIf="datalist.length">
+    <select size={{max}} (change)="combo($event, inputElem)">
+        <option *ngFor="let opt of datalist">{{opt}}</option>
+    </select>
+  </div>
 </div>

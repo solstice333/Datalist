@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./datalist.component.css']
 })
 export class DatalistComponent {
-  title: string = 'app';
   opts: string[] = [ 
     'one', 'two', 'three', 'four', 'five', 
     'six', 'seven', 'eight', 'nine', 'ten'

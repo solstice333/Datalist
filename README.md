@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Usage
 
 `npm install`
+
 `npm start`
 
 Navigate to `http://localhost:4200/`

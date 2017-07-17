@@ -12,12 +12,19 @@ export class DatalistComponent {
   ];
   datalist: string[] = [];
   max: number = 5;
+  dropdownActive: boolean = false;
 
-  combo(selectEvent: Event, inputElem: HTMLInputElement): void {
-    inputElem.value = (selectEvent.target as HTMLSelectElement).value;
+  setInput(value: string, inputElem: HTMLInputElement): void {
+    inputElem.value = value;
+    this.filterOpts(value);
+    this.dropdownToggle();
   }
 
   filterOpts(term: string) {
     this.datalist = this.opts.filter(opt => opt.includes(term) && term !== '');
+  }
+
+  dropdownToggle() {
+    this.dropdownActive = !this.dropdownActive;
   }
 }
